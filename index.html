@@ -5,8 +5,8 @@
 	<style>
 		body{
 			font-family: Helvetica;
-			color: blue;
-			background-color: lightyellow
+			color: black;
+			background-color: #FFFFFF
 		}
 		h1{
 			color: lightgray;
@@ -22,31 +22,37 @@
 			padding: 2px;
 
 		}
+		.header{
+			color: black;
+		}
 		form{
 			align-self: center;
 			text-align: center;
-			border: 3px dashed solid blue
 		}
-		.mestitle{
+		#mestitle{
 			width: 400px;
 		}
-		.email{
+		#email{
 			width: 300px;
 		}
-		.textarea{
+		#textarea{
 			width: 500px;
 			height: 200px;
 		}
 	</style>
+	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
+	<div class="header">
 	<img src="https://res.cloudinary.com/asylcreek/image/upload/v1567503710/Boro%20Omokugbo%20Joseph.jpg" align="right" width="11%" height="16%"> 
 
 	<h1>Boro Omokugbo Joseph</h1> 
 	<p>
 		<strong>NATIONALITY:</strong> NIGERIAN | <strong>RESIDENTIAL/POSTAL ADDRESS:</strong> 19, JADESOLA-OSHODI STREET, AGUDA, SURULERE,<br> LAGOS, NIGERIA | <strong>E-MAIL ADDRESS:</strong> <a href="mailto:omokugbobr@gmail.com">omokugbobr@gmail.com</a> | <strong>TELEPHONE NUMBER:</strong> +234(0)9068982847
 	</p>
+	</div>
 	<hr>
+	<div>
 	<p>
 		<strong> PROFILE</strong><br>
 		I am a goal-oriented individual with a track record of providing proactive and innovative leadership with a focus on team work to efficiently achieve results.<br> I am a fast learner. I am passionate about programming as well as many innovative engineering endeavours such as concept cars. I am also a language enthusiast.
@@ -138,26 +144,28 @@
 			<li>I have basic knowledge of CSS</li>
 		</ul>
 	</p>
-	<hr>
-	<form method="post" action="mailto: omokugbobr@gmail.com" autocomplete="on">
+	</div>
+	<hr><br>
+	<form method="post" action="" autocomplete="on" onsubmit="return validate()">
 		<strong>Contact Boro Omokugbo Joseph</strong><br>
 		<fieldset>
 			<legend>
 				Personal Information
 			</legend>
 			First Name<br>
-			<input type="text" name="First Name" value="Joseph" placeholder="Your First Name"><br><br>
+			<input id ="fname" type="text" name="First Name" placeholder="Your First Name"><br><br>
 			Last Name<br>
-			<input type="text" name="Last Name" placeholder="Your Last Name"><br><br>
+			<input id = "lname" type="text" name="Last Name" placeholder="Your Last Name"><br><br>
 			Email Address<br>
-			<input class="email" type="email" name="Email Address" placeholder="Your Email Address"><br>
+			<input id ="email" type="email" name="Email Address" placeholder="Your Email Address"><br>
 		</fieldset>
+		<br><br>
 		<fieldset>
 			<legend>Message Details</legend>
 			Title of Message<br>
-			<input class="mestitle" type="text" name="Title of Message" placeholder="Message Title"><br><br>
+			<input id ="mestitle" type="text" name="Title of Message" placeholder="Message Title"><br><br>
 			Message<br>
-			<textarea class="textarea" name="Message" placeholder="Compose Message"></textarea>
+			<textarea id ="textarea" name="Message" placeholder="Compose Message"></textarea>
 		</fieldset><br>
 		<input type="submit" name="Submit">
 	</form>
