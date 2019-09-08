@@ -4,10 +4,10 @@ if(isset($_POST['Submit'])){
 	$emailTo = "omokugbobr@gmail.com";
 	$emailSubject = "Data from CV Contact Form";
 
-	$fname = $_POST['First Name'];
-	$lname = $_POST['Last Name'];
-	$email = $_POST['Email Address'];
-	$title = $_POST['Title of Message'];
+	$fname = $_POST['FirstName'];
+	$lname = $_POST['LastName'];
+	$email = $_POST['EmailAddress'];
+	$title = $_POST['TitleofMessage'];
 	$message = $_POST['Message'];
 	
 	$emailMessage = "Contact Form details below:. \n\n";
